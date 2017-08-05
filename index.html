@@ -5,19 +5,19 @@
     		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
   	</head>
 	<body>
-		//Inputs
+		<!-- Inputs -->
 		<form>
 			<input type='text' id='input'/>
 			<input type='button' value='Submit' onclick='postInput()'/>
 		</form>
-		//Diplay script
+		<!-- Diplay script -->
 		<script type='text/JavaScript'>
 			function postInput() {
-				var input = document.getElementById('input').innerHTML;
+				var input = document.getElementById('input').value;
 				document.getElementById('display').innerHTML = input;
 			}
 		</script>
-		//Display area
+		<!-- Display area -->
 		<p id='display'/>
   	</body>
 </html>
